@@ -1,13 +1,12 @@
 package client
 
 import (
-	"_/home/matheus/workspace/learning-gRPC/client"
 	"context"
 	"fmt"
 	"log"
 	"time"
 
-	pb "../proto"
+	// pb "github.com/souzera/learning-gRPC/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
