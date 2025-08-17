@@ -1,4 +1,4 @@
-package client
+package main
 
 import (
 	"context"
@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	// pb "github.com/souzera/learning-gRPC/proto"
+	pb "github.com/souzera/learning-gRPC/proto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 )
@@ -18,7 +18,7 @@ func main() {
 	}
 	defer connection.Close()
 
-	client = pb.NewUserServiceClient(connection)
+	client := pb.NewUserServiceClient(connection)
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
 	defer cancel()
 

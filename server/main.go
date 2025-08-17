@@ -7,7 +7,7 @@ import (
 	"net"
 	"sync"
 
-	//pb "github.com/souzera/learning-gRPC/proto"
+	pb "github.com/souzera/learning-gRPC/proto"
 	"google.golang.org/grpc"
 )
 
